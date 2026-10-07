@@ -1,5 +1,6 @@
 # Query: .gitignore
 # ContextLines: 1
 
-/.scrabble.exe
+/scrabble.exe
+/text.exe
 
