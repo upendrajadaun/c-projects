@@ -71,3 +71,5 @@ int wordMath(char word[20])
     }
 return score;// retuning score value
 }
+
+// made by upendra singh jadaun feel free to contribute
