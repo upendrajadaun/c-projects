@@ -88,9 +88,9 @@ int main(void)
     int no_snt = sent + 1; // for the last one
 
 
-//     printf("no of the letters : %d\n", no_let);   
-//     printf("no of words : %d\n", no_wrd);
-//     printf("no of sentances : %d\n", no_snt);
+      //     printf("no of the letters : %d\n", no_let);   
+      //     printf("no of words : %d\n", no_wrd);
+      //     printf("no of sentances : %d\n", no_snt);
 
 
     float L = (float)(no_let*100) / no_wrd;
