@@ -18,7 +18,7 @@
 
 struct text_counts
 {
-    size_t letters;
+    size_t letters;//test
     size_t words;
     size_t sentences;
 };
