@@ -8,12 +8,14 @@
 
 int power(int tm);
 static char keymath(char x, char *key);
+int check(char *key);
     
 int main(int argc, char *argv[])
 { 
     // if(argv[1] = NULL) that will k work fine too but with limitations of more than 1 argument
-    if(argc != 2)
+    if(argc != 2 || check(argv[1]) == -1)
     {
+      printf("use : .\\creasar key ");
       return 1;
     }
     
@@ -38,13 +40,6 @@ int main(int argc, char *argv[])
 
 }
 
-
-
-
-
-
-
-
 static char keymath(char x, char *key)
 {
     
@@ -64,7 +59,7 @@ static char keymath(char x, char *key)
            
         
         }
-  
+        
 
         if( x == ' ')
         {
@@ -105,5 +100,21 @@ int power(int tm)
      i = 1;
 
     return i;
+}
+
+int check(char *key)
+{
+    int i;
+    int k = 0;
+    int len = strlen(key);
+    for(i = 0; i < len; i++ )
+    {
+        if(key[i] < '0' || key[i] > '9')
+        {
+            k = -1;
+        }
+    }
+
+    return k;
 }
 
